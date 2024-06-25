@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Developer" content="Tanishq Gaur">
+    <meta name="keywords" content="HTML CSS">
+    <link rel="stylesheet" href="index.css">
+    <!-- Link For Font Awesome cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link for Poppins Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- -------------------------------Tailwind Output.css file link------------------------ -->
+
+    <link rel="stylesheet" href="output.css">
+
+    <title>My Portfolio</title>
+</head>
+
+<body>
+
+    <input type="checkbox" id="toggleinput">
+
+    <header>
+        <h2 class="hover:underline text-2xl tracking-wider decoration-wavy underline-offset-4 decoration-fuchsia-500">
+            TANISHQ GAUR</h2>
+
+        <div class="togglelabelDiv">
+            <div class="circletoggle"></div>
+            <label for="toggleinput" class="togglelabel">c</label>
+        </div>
+
+        <div class="Links">
+            <ul>
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <a href="#about-me">
+                    <li>About</li>
+                </a>
+                <a href="#skill">
+                    <li>Skills</li>
+                </a>
+                <a href="#Certificate">
+                    <li>Certificates</li>
+                </a>
+                <a href="#Projects">
+                    <li>Projects</li>
+                </a>
+                <a href="#Contact">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </div>
+        <div>
+            <div class="WholeMenuToggle">
+
+                <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+                <label for="menu-toggle" class="MenuLinks">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+
+                <div class="MenuUl">
+                    <ul>
+                        <a href="#">
+                            <li>Home</li>
+                        </a>
+                        <a href="#about-me">
+                            <li>About</li>
+                        </a>
+                        <a href="#skill">
+                            <li>Skills</li>
+                        </a>
+                        <a href="#Certificate">
+                            <li>Certificates</li>
+                        </a>
+                        <a href="#Projects">
+                            <li>Projects</li>
+                        </a>
+                        <a href="#Contact">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- -----------------------Home Section--------------------- -->
+    <main>
+        <div class="left">
+            <p class="p1"> Hi, My name is</p>
+            <p class="p2 ">Tanishq Gaur.</p>
+            <p class="p3">A Full Stack Developer</p>
+            <div class="socialLinks">
+                <a href="https://www.linkedin.com/in/tanishq-gaur-14530a251" target="_blank"> <i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com" target="_blank"> <i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/_.heyy.tanishq._/" target="_blank"> <i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.twitter.com" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <button class="btnCv">Download CV</button>
+        </div>
+        <div class="right">
+            <img src="Images/imageL.jpeg" height="300px" width="250px" alt="MyImage">
+        </div>
+    </main>
+
+    <!-- ----------------------------------------About Section------------------------------ -->
+    <div id="about-me">
+
+        <div class="AboutImg">
+            <img src="Images/image1.jpeg" class="rounded-lg" height="350px" width="300px" alt="Personal-Image">
+        </div>
+
+        <div class="About-Content">
+            <h3>About <span style="color: #b766ea;"> Me</span></h3>
+            <h4>"Full-Stack Wizard: Turning Coffee into Code and Ideas into Reality!"</h4>
+            <article>Hello, I am Tanishq Gaur, a passionate and skilled web developer who recently completed a Bachelor
+                of
+                Computer Applications (BCA) in April 2024. With a strong foundation in the MERN stack (MongoDB,
+                Express.js, React, Node.js), I specialize in building dynamic and responsive full-stack web
+                applications. Currently, I am enhancing my expertise through a Full Stack Placement Guarantee course
+                from Internshala, which is further sharpening my skills and preparing me for the industry. My journey in
+                web development has been fueled by a love for creating seamless and engaging user experiences.
+                Throughout my academic career, I have worked on several projects that have honed my abilities in both
+                front-end and back-end development. I am proficient in various web technologies, including HTML, CSS,
+                JavaScript, and have a good grasp of database management. I thrive in collaborative environments and
+                enjoy working with teams to bring innovative ideas to life. I am eager to contribute my skills to
+                exciting projects and continue growing as a developer. In my free time, I enjoy exploring new
+                technologies, learning best practices, and staying updated with the latest trends in web development. My
+                goal is to leverage my knowledge and passion to build impactful web applications that solve real-world
+                problems.
+            </article>
+            <button class="Read-More">Read more</button>
+        </div>
+
+    </div>
+    <!-- -------------------Skills section----------------------- -->
+    <!-- Started using Tailwind Css from here  -->
+
+
+    <h1 class="Skill-Head text-3xl hover:underline decoration-wavy underline-offset-4 tracking-wider cursor-pointer">My
+        <span id="SkillHeadSpan">Skills</span>
+    </h1>
+    <div class="Skills" id="skill">
+
+        <div class="Skill-left">
+            <p id="Tech-Heading "
+                class="text-xl hover:underline decoration-wavy underline-offset-4 mb-2 cursor-pointer"><span
+                    style="color: #b766ea;">TECHNICAL</span>
+                SKILLS</p>
+            <!-- --------------HTML--------------- -->
+            <div class="HTML SKillLeftSubName">
+                <i class="fa-brands fa-html5"> HTML </i>
+                <p style="display: inline;" id="HTMLPER">88%</p>
+                <p class="Progress-Back">
+                <p class="HTML-progress ProgressBarForAll"></p>
+                </p>
+            </div>
+
+            <!-- ----------------CSS----------------- -->
+
+            <div class="CSS SKillLeftSubName">
+                <i class="fa-brands fa-css3-alt"> CSS</i>
+                <p style="display: inline;" id="CSSPER">91%</p>
+                <p class="Progress-Back">
+                <p class="CSS-progress ProgressBarForAll"></p>
+                </p>
+            </div>
+            <!-- ------------------------JS----------------- -->
+
+
+            <div class="javascript SKillLeftSubName">
+                <i class="fa-brands fa-js"> JavaScript</i>
+                <p style="display: inline;" id="JAVASCRIPTPER">85%</p>
+                <p class="Progress-Back">
+                <p class="JavaScript-progress ProgressBarForAll"></p>
+                </p>
+            </div>
+            <!-- -----------------React---------------------- -->
+
+            <div class="React SKillLeftSubName">
+                <i class="fa-brands fa-react"> React</i>
+                <p style="display: inline;" id="REACTPER">94%</p>
+                <p class="Progress-Back">
+                <p class="React-progress ProgressBarForAll"></p>
+                </p>
+            </div>
+
+            <!-- ------------------------MongoDB--------------------------->
+
+
+            <div class="MongoDB SKillLeftSubName">
+                <i class="fa-solid fa-database"> MongoDB</i>
+                <p style="display: inline;" id="MONGOPER">91%</p>
+                <p class="Progress-Back">
+                <p class="MongoDB-progress ProgressBarForAll"></p>
+                </p>
+            </div>
+            <!-- -------------------Nodejs----------------- -->
+
+
+            <div class="NodeJS SKillLeftSubName">
+                <i class="fa-solid fa-circle-nodes"> NodeJS</i>
+                <p style="display: inline;" id="NODEPER">82%</p>
+                <p class="Progress-Back">
+                <p class="NodeJS-progress ProgressBarForAll"></p>
+                </p>
+            </div>
+            <!-- ---------------------------JAVA------------------- -->
+
+
+            <div class="Java SKillLeftSubName">
+                <i class="fa-brands fa-java"> Java</i>
+                <p style="display: inline;" id="JAVAPER">80%</p>
+                <p class="Progress-Back">
+                <p class="Java-progress ProgressBarForAll"></p>
+                </p>
+            </div>
+            <!-- ----------------------MERN STACK--------------------- -->
+
+            <div class="MERN SKillLeftSubName">
+                <i class="fa-solid fa-code"> MERN Stack</i>
+                <p style="display: inline;" id="MERNPER">88%</p>
+                <p class="Progress-Back">
+                <p class="MERN-progress ProgressBarForAll"></p>
+                </p>
+            </div>
+
+
+        </div>
+
+        <div class="Skill-right">
+            <p id="Tech-Head"
+                class="hover:underline text-slate-50 cursor-pointer text-xl mb-4 decoration-wavy underline-offset-4 ">
+                <span style="color: #b766ea;" class=" text-xl">PROFESSIONAL</span> SKILLS
+            </p>
+
+            <div class="first">
+                <div class="FlexClass">
+                    <div class="Team-work">
+                        <p class="CirCenter">94%</p>
+                    </div>
+                    <p>Team-work</p>
+                </div>
+
+                <div class="FlexClass">
+                    <div class="Creativity">
+                        <p class="CirCenter">80%</p>
+                    </div>
+                    <p>Creativity</p>
+                </div>
+            </div>
+
+            <div class="two">
+                <div class="FlexClass">
+                    <div class="Problem-Solving">
+                        <p class="CirCenter">85%</p>
+                    </div>
+                    <p>Problem-Solving</p>
+                </div>
+
+                <div class="FlexClass">
+                    <div class="Communication">
+                        <p class="CirCenter">89%</p>
+                    </div>
+                    <p>Communication</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------Certificates---------------------------- -->
+
+    <div id="Certificate" class="certificates ">
+        <h1 class=" tracking-wider ">Certificates</h1>
+
+        <div class="All-Cards">
+
+            <div class="card1 card">
+                <i class="text-3xl fa-solid fa-computer"></i>
+                <h2 style="color: #00EAFF;" class="text-2xl">Responsive Web Design</h2>
+                <p class="text-sm"> Completed an intensive course covering essential web design principles and
+                    practices. Gained
+                    proficiency in HTML5, CSS3, and Flexbox, creating visually appealing and functional web pages.
+                    Developed skills in responsive design, ensuring optimal user experiences .
+                </p>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><a
+                        href="https://freecodecamp.org/certification/fcca66610da-7034-423d-ad6a-4acb25071856/responsive-web-design"
+                        target="_blank">Explore</a></button>
+            </div>
+
+            <div class=" card2 card">
+                <i class="fa-solid text-3xl fa-code"></i>
+                <h2 style="color: #00EAFF;" class="text-2xl">Full Stack Development Let's Begin</h2>
+                <p class="text-sm">Acquired fundamental skills in HTML and CSS, laying a strong foundation for web
+                    development.
+                    Learned to structure web pages using semantic HTML for better accessibility and SEO.
+                    Gained proficiency in CSS to style and layout web pages, creating responsive designs.</p>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><a
+                        href="https://trainings.internshala.com/s/v/3337391/faca1bb8"
+                        target="_blank">Explore</a></button>
+
+            </div>
+
+            <div class="card3 card">
+                <i class="fa-solid text-3xl fa-laptop-code"></i>
+                <h2 style="color: #00EAFF;" class="text-2xl">Web Development </h2>
+                <p class="text-sm">I successfully completed the Web Development Program at Digital Adda, where I gained
+                    comprehensive knowledge in both front-end and back-end web development. The
+                    program covered essential technologies and tools, including HTML, CSS, JavaScript, React,
+                    Node.js, Express, and MongoDB.
+
+
+                </p>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"><a
+                        href="https://drive.google.com/file/d/1zU2Qv4zMcuBP7ROhvMglCn6nWsesAEQ9/view"
+                        target="_blank">Explore</a></button>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- -----------------------Projects--------------------- -->
+
+    <div id="Projects" class="Project">
+        <h1 id="ProjectHead" class="text-3xl uppercase tracking-wider ">Projects</h1>
+        <div class="ColumnP mt-7">
+
+            <div class="ProjectCard">
+                <img src="https://okcredit-blog-images-prod.storage.googleapis.com/2020/12/food-delivery-2.jpg"
+                    alt="Food Delivery">
+                <div class="Hover-Content">
+                    <h1 class="uppercase text-2xl mb-3  tracking-wider text-white text-center">Food
+                        Delivery
+                    </h1>
+
+                    <span id="SpanOfHoverContent">Click me <p class="fa-solid fa-hand-point-down"></p></span>
+
+                    <a href="https://www.youtube.com/watch?v=_-7ojkp03KY" target="_blank"><i
+                            class="fa-solid fa-link"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="ProjectCard">
+                <img src="Images/AdmitCard.png" alt="AdmitCard">
+                <div class="Hover-Content">
+                    <h1 class="text-2xl mb-3  tracking-wider  text-white text-center">Admit Card Generator
+                    </h1>
+                    <span id="SpanOfHoverContent">Click me <p class="fa-solid fa-hand-point-down"></p> </span>
+
+                    <a href="https://tanishqgaur20.github.io/Admit_Card/" target="_blank"><i
+                            class="fa-solid fa-link"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="ProjectCard">
+                <img src="Images/QueryHandle.png" alt="QueryHandle">
+                <div class="Hover-Content">
+                    <h1 class="text-2xl mb-3  tracking-wider text-white text-center">Online Query Handler
+                    </h1>
+                    <span id="SpanOfHoverContent">Click me <p class="fa-solid fa-hand-point-down"></p> </span>
+
+                    <a href="https://www.youtube.com/watch?v=gygu5r-QcZw" target="_blank"><i
+                            class="fa-solid fa-link"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="ColumnP">
+            <div class="ProjectCard">
+                <img src="Images/ResumeBuilder.png" alt="ResumeBuilder">
+                <div class="Hover-Content">
+                    <h1 class="text-2xl mb-3  tracking-wider text-white text-center">Resume Builder
+                    </h1>
+                    <span id="SpanOfHoverContent">Click me <p class="fa-solid fa-hand-point-down"></p> </span>
+
+                    <a href="https://tanishqgaur20.github.io/Resume_Builder/" target="_blank"><i
+                            class="fa-solid fa-link"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="ProjectCard">
+                <img src="https://i.ytimg.com/vi/7JqdjWB88Kk/maxresdefault.jpg" alt="Weather">
+                <div class="Hover-Content">
+                    <h1 class="text-2xl mb-3  tracking-wider text-white text-center">Weather App
+                    </h1>
+                    <span id="SpanOfHoverContent">Click me <p class="fa-solid fa-hand-point-down"></p> </span>
+
+                    <a href="https://tanishqgaur20.github.io/Weather_Api/" target="_blank"><i
+                            class="fa-solid fa-link"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="ProjectCard">
+                <img src="https://lh4.googleusercontent.com/xvF91h2cSFRbkO3CNPrlhYKIap9mD6g9-j-8-L17BqMu_MMJNGPSCnHg02M62MT5j8SMaU81yzCOhzO6lmk5XaSOso_dfFSsJUHcbTK13VEgG8YPBget0BHlrGjDM8FGaiGTUk7BU43zYMbtTM2qeX8"
+                    alt="Instagram Login">
+                <div class="Hover-Content">
+                    <h1 class="text-2xl mb-3  tracking-wider text-white text-center">Instagram Login
+                    </h1>
+                    <span id="SpanOfHoverContent">Click me <p class="fa-solid fa-hand-point-down"></p> </span>
+
+                    <a href="https://tanishqgaur20.github.io/Instagram_Login" target="_blank">
+                        <i class=" fa-solid fa-link"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- -------------------Contact Me----------------------- -->
+
+    <div id="Contact" class="Contact-me">
+        <h1 id="ProjectHead" class="text-3xl uppercase tracking-wider text-center">Contact ME</h1>
+        <form action="">
+            <div class="FullName">
+                <input type="text" placeholder=" First Name" name="firstname">
+                <input type="text" placeholder="Last Name" name="lastname">
+            </div>
+            <div class="EmailNum">
+                <input type="email" placeholder=" Email address">
+                <input type="number" placeholder="Mobile Number">
+            </div>
+            <div class="summary ">
+                <textarea class="p-3 text-white" placeholder="Write Your Query" name="" id=""></textarea>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Send
+                    Message</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-icons">
+            <a href="https://www.truecaller.com/" target="_blank"><i class="fa-solid fa-phone-volume"></i></a>
+            <a href="https://mail.google.com/mail/u/0/?hl=en/#inbox" target="_blank"><i
+                    class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-solid fa-angles-up"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
