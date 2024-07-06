@@ -5,6 +5,30 @@
     font-family: poppins, sans-serif;
 }
 
+.Intro {
+    height: 100vh;
+    width: 100vw;
+    background-color: #0d0d37;
+    font-size: 9vh;
+    font-weight: 600;
+    color: white;
+    text-shadow: 4px 4px 4px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+}
+
+.Intro h1 {
+    height: 100px;
+    opacity: 1;
+    overflow: hidden;
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    text-underline-offset: 15px;
+}
+
 header {
     height: 60px;
     width: 100vw;
@@ -852,6 +876,17 @@ footer {
 
 @media (max-width :500px) {
 
+
+    .Intro {
+        font-size: 4vh;
+        padding: 10px;
+    }
+
+    .Intro h1 {
+        height: 200px;
+    }
+
+
     header {
         height: 60px;
         width: 100vw;
@@ -1425,6 +1460,17 @@ footer {
 /* -------------------------------------IPad mini Media query------------------------------------ */
 
 @media (min-width: 510px) and (max-width: 800px) {
+
+
+    .Intro {
+        font-size: 4vh;
+        padding: 10px;
+    }
+
+    .Intro h1 {
+        height: 200px;
+    }
+
     header {
         height: 60px;
         width: 100vw;
