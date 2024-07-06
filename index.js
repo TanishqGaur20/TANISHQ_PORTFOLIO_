@@ -1,5 +1,28 @@
 var timeline = gsap.timeline()
 
+function body() {
+    gsap.from('.fullPage', {
+        opacity: 0,
+        duration: 3,
+        backgroundColor: 'black',
+        delay: 2,
+        ease: "power1.inOut"
+    })
+    gsap.from('.Intro', {
+        opacity: 1,
+        duration: 3, ease: "power1.inOut"
+    })
+    gsap.from('.Intro h1', {
+        opacity: 0,
+        duration: 1,
+        ease: "power1.inOut"
+    })
+    timeline.from('.Intro', {
+        duration: 3
+    })
+}
+
+body()
 function page1() {
     gsap.from('.NavName', {
         opacity: 0,
