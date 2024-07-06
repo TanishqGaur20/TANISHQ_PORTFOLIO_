@@ -23,43 +23,44 @@ function body() {
 }
 
 body()
+
 function page1() {
-    gsap.from('.NavName', {
+    timeline.from('.NavName', {
         opacity: 0,
         y: -50,
         duration: 1,
     })
-    gsap.from('.togglelabelDiv', {
+    timeline.from('.togglelabelDiv', {
         opacity: 0,
         y: -50,
         duration: 1,
     })
-    gsap.from('.Links', {
+    timeline.from('.Links', {
         opacity: 0,
         y: -50,
         duration: 1,
     })
-    gsap.from('.p1', {
+    timeline.from('.p1', {
         opacity: 0,
         y: -70,
         duration: 1,
     })
-    gsap.from('.p2', {
+    timeline.from('.p2', {
         opacity: 0,
         y: -70,
         duration: 1,
     })
-    gsap.from('.p3', {
+    timeline.from('.p3', {
         opacity: 0,
         y: -70,
         duration: 1,
     })
-    gsap.from('.socialLinks', {
+    timeline.from('.socialLinks', {
         opacity: 0,
         y: -70,
         duration: 1,
     })
-    gsap.from('.rightImg', {
+    timeline.from('.rightImg', {
         opacity: 0,
         y: -150,
         duration: 1,
