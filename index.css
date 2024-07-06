@@ -123,7 +123,8 @@ header ul li:hover {
 #toggleinput:checked~.Project,
 #toggleinput:checked~.Contact-me,
 #toggleinput:checked~.Contact-me form input,
-#toggleinput:checked~footer {
+#toggleinput:checked~footer,
+#toggleinput:checked~header .WholeMenuToggle .MenuUl {
     color: black;
     background-color: white;
 
@@ -219,7 +220,8 @@ main {
 }
 
 .socialLinks i:hover {
-    box-shadow: 2px 2px 2px white;
+    background-color: white;
+    color: #000021;
 }
 
 
@@ -233,6 +235,12 @@ main {
     background-color: #12123E;
     cursor: pointer;
     box-shadow: #b766ea 0px 3px 6px, #b766ea 0px 3px 6px;
+    transition: all 1s linear;
+}
+
+.btnCv:hover {
+    color: black;
+    background-color: white;
 }
 
 .right {
@@ -247,7 +255,12 @@ main {
     border-radius: 5px;
     height: 350px !important;
     width: 250px !important;
-    box-shadow: 5px 5px 10px #b766ea;
+
+    transition: all 2s linear;
+}
+
+.right img:hover {
+    transform: scale(1.1);
 }
 
 /* ---------------------------About Me Part--------------------- */
@@ -271,7 +284,11 @@ main {
 
 .AboutImg img {
     box-shadow: -5px -5px 10px #b766ea;
+    transition: all 2s linear;
+}
 
+.AboutImg img:hover {
+    transform: scale(1.1);
 }
 
 .About-Content {
@@ -305,6 +322,12 @@ main {
     background-color: #12123E;
     cursor: pointer;
     box-shadow: #b766ea 0px 3px 6px, #b766ea 0px 3px 6px;
+    transition: all 1s linear;
+}
+
+.Read-More:hover {
+    color: black;
+    background-color: white;
 }
 
 /* ----------------------------SKILLS PART--------------------- */
@@ -719,6 +742,14 @@ p {
     flex-direction: column;
 }
 
+#ContactHead {
+    text-shadow: 4px 4px 4px #8759a3;
+    background: linear-gradient(45deg, #00EAFF, #8800FF);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
 form {
     height: 60vh;
     width: 32vw;
@@ -797,7 +828,13 @@ footer {
     cursor: pointer;
     justify-content: center;
     align-items: center;
+    transition: all 1s linear;
 }
+
+.footer-icons i:hover {
+    color: red;
+}
+
 
 /* -------------.----------------------------Media QUery For Samsun Galaxy 8+----------------------------- */
 
@@ -958,12 +995,13 @@ footer {
     /* ---------------------------About Me Part--------------------- */
 
     #about-me {
-        height: 80vh;
+        height: 128vh;
         width: 100vw;
         background-color: #000021;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        padding-top: 70px;
         color: white;
         flex-direction: column;
     }
@@ -975,21 +1013,25 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        display: none;
+        /* display: none; */
     }
 
     .AboutImg img {
-        height: 300px;
+        height: 310px;
         width: 250px;
         border-radius: 5px;
     }
 
     .About-Content {
-        height: 90vh;
+        height: 70vh;
         width: 100vw;
+        margin-top: 70px;
         padding: 10px;
         padding-top: 50px;
     }
+
+
+
 
     .About-Content h3 {
         font-size: 30px;
@@ -1372,7 +1414,7 @@ footer {
 
 @media (min-width: 510px) and (max-width: 800px) {
     header {
-        height: 100px;
+        height: 60px;
         width: 100vw;
         background-color: #000021;
         padding: 0px 5px;
@@ -1462,13 +1504,14 @@ footer {
 
     /* ---------------------Main Section------------------------ */
     main {
-        height: 60vh;
+        height: 70vh;
         width: 100vw;
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
         background-color: #000021;
+        padding-top: 100px;
     }
 
     .left {
@@ -1526,39 +1569,45 @@ footer {
 
     /* ---------------------------About Me Part--------------------- */
 
+
     #about-me {
-        height: 40vh;
+        height: 80vh;
         width: 100vw;
         background-color: #000021;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        /* padding-top: 70px; */
         color: white;
         flex-direction: column;
     }
 
     .AboutImg {
         padding: 0px 0px;
-        height: 25vh;
+        height: 35vh;
         width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
-        display: none;
+        /* display: none; */
+        order: 2;
     }
 
     .AboutImg img {
-        height: 300px;
+        height: 330px;
         width: 250px;
         border-radius: 5px;
     }
 
     .About-Content {
-        height: 90vh;
+        height: 40vh;
         width: 100vw;
+        /* margin-top: 70px; */
         padding: 10px;
         padding-top: 50px;
+        order: 1;
     }
+
 
     .About-Content h3 {
         font-size: 30px;
@@ -1607,7 +1656,7 @@ footer {
     .Skill-left {
         height: 40vh;
         width: 100%;
-        padding: 20px;
+        padding: 20px 20px 20px 190px;
         color: white;
     }
 
@@ -1622,6 +1671,91 @@ footer {
         height: 8px;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
+    }
+
+    .Progress-Back {
+        width: 350px;
+        background-color: #646A74;
+        height: 8px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+
+    #HTMLPER {
+        margin-left: 220px;
+    }
+
+    #CSSPER {
+        margin-left: 240px;
+    }
+
+    #JAVASCRIPTPER {
+        margin-left: 130px;
+    }
+
+    #REACTPER {
+        margin-left: 200px;
+    }
+
+    #MONGOPER {
+        margin-left: 160px;
+    }
+
+    #NODEPER {
+        margin-left: 185px;
+    }
+
+    #JAVAPER {
+        margin-left: 215px;
+    }
+
+    #MERNPER {
+        margin-left: 125px;
+    }
+
+    .ProgressBarForAll {
+        position: relative;
+        top: -8px;
+        background-color: #00EAFF;
+        height: 8px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        animation: progressBarAnim 3s ease-out forwards;
+    }
+
+    .HTML-progress {
+        --target-width: 310px;
+    }
+
+
+
+    .CSS-progress {
+        --target-width: 320px;
+    }
+
+    .JavaScript-progress {
+        --target-width: 300px;
+    }
+
+    .React-progress {
+        --target-width: 330px;
+    }
+
+    .MongoDB-progress {
+        --target-width: 320px;
+    }
+
+    .NodeJS-progress {
+        --target-width: 290px;
+    }
+
+    .Java-progress {
+        --target-width: 280px;
+    }
+
+    .MERN-progress {
+        --target-width: 310px;
     }
 
 

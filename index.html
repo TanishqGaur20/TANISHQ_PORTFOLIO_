@@ -31,7 +31,8 @@
     <input type="checkbox" id="toggleinput">
 
     <header>
-        <h2 class="hover:underline text-2xl tracking-wider decoration-wavy underline-offset-4 decoration-fuchsia-500">
+        <h2
+            class="NavName hover:underline text-2xl tracking-wider decoration-wavy underline-offset-4 decoration-fuchsia-500">
             TANISHQ GAUR</h2>
 
         <div class="togglelabelDiv">
@@ -61,41 +62,41 @@
                 </a>
             </ul>
         </div>
-        <div>
-            <div class="WholeMenuToggle">
 
-                <input type="checkbox" id="menu-toggle" class="menu-checkbox">
-                <label for="menu-toggle" class="MenuLinks">
-                    <i class="fa-solid fa-bars"></i>
-                </label>
+        <div class="WholeMenuToggle">
+
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="MenuLinks">
+                <i class="fa-solid fa-bars"></i>
+            </label>
 
 
-                <div class="MenuUl">
-                    <ul>
-                        <a href="#">
-                            <li>Home</li>
-                        </a>
-                        <a href="#about-me">
-                            <li>About</li>
-                        </a>
-                        <a href="#skill">
-                            <li>Skills</li>
-                        </a>
-                        <a href="#Certificate">
-                            <li>Certificates</li>
-                        </a>
-                        <a href="#Projects">
-                            <li>Projects</li>
-                        </a>
-                        <a href="#Contact">
-                            <li>Contact</li>
-                        </a>
-                    </ul>
-                    </ul>
-                </div>
-
+            <div class="MenuUl">
+                <ul>
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#about-me">
+                        <li>About</li>
+                    </a>
+                    <a href="#skill">
+                        <li>Skills</li>
+                    </a>
+                    <a href="#Certificate">
+                        <li>Certificates</li>
+                    </a>
+                    <a href="#Projects">
+                        <li>Projects</li>
+                    </a>
+                    <a href="#Contact">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+                </ul>
             </div>
+
         </div>
+
     </header>
 
 
@@ -116,7 +117,7 @@
             <button class="btnCv">Download CV</button>
         </div>
         <div class="right">
-            <img src="imageL.jpeg" height="300px" width="250px" alt="MyImage">
+            <img id="rightImg" src="Images/imageL.jpeg" height="300px" width="250px" alt="MyImage">
         </div>
     </main>
 
@@ -124,7 +125,8 @@
     <div id="about-me">
 
         <div class="AboutImg">
-            <img src="image1.jpeg" class="rounded-lg" height="350px" width="300px" alt="Personal-Image">
+            <img src="Images/image1.jpeg" id="AboutImgElem" class="rounded-lg" height="350px" width="300px"
+                alt="Personal-Image">
         </div>
 
         <div class="About-Content">
@@ -153,17 +155,19 @@
     <!-- -------------------Skills section----------------------- -->
     <!-- Started using Tailwind Css from here  -->
 
-
-    <h1 class="Skill-Head text-3xl hover:underline decoration-wavy underline-offset-4 tracking-wider cursor-pointer">My
-        <span id="SkillHeadSpan">Skills</span>
-    </h1>
+    <div class=" Skill-Head ">
+        <h1 class="SkillH1  text-3xl hover:underline decoration-wavy underline-offset-4 tracking-wider cursor-pointer">
+            My
+            <span id="SkillHeadSpan">Skills</span>
+        </h1>
+    </div>
     <div class="Skills" id="skill">
 
         <div class="Skill-left">
-            <p id="Tech-Heading "
-                class="text-xl hover:underline decoration-wavy underline-offset-4 mb-2 cursor-pointer"><span
-                    style="color: #b766ea;">TECHNICAL</span>
-                SKILLS</p>
+            <p id="Tech-Heading" class="text-xl hover:underline decoration-wavy underline-offset-4 mb-2 cursor-pointer">
+                <span style="color: #b766ea;">TECHNICAL</span>
+                SKILLS
+            </p>
             <!-- --------------HTML--------------- -->
             <div class="HTML SKillLeftSubName">
                 <i class="fa-brands fa-html5"> HTML </i>
@@ -288,8 +292,7 @@
     <!-- --------------------------Certificates---------------------------- -->
 
     <div id="Certificate" class="certificates ">
-        <h1 class=" tracking-wider ">Certificates</h1>
-
+        <h1 class="CertHead tracking-wider ">Certificates</h1>
         <div class="All-Cards">
 
             <div class="card1 card">
@@ -341,7 +344,7 @@
 
     <div id="Projects" class="Project">
         <h1 id="ProjectHead" class="text-3xl uppercase tracking-wider ">Projects</h1>
-        <div class="ColumnP mt-7">
+        <div class="ColumnP ColumnP1gsap mt-7">
 
             <div class="ProjectCard">
                 <img src="https://okcredit-blog-images-prod.storage.googleapis.com/2020/12/food-delivery-2.jpg"
@@ -359,7 +362,7 @@
                 </div>
             </div>
             <div class="ProjectCard">
-                <img src="AdmitCard.png" alt="AdmitCard">
+                <img src="Images/AdmitCard.png" alt="AdmitCard">
                 <div class="Hover-Content">
                     <h1 class="text-2xl mb-3  tracking-wider  text-white text-center">Admit Card Generator
                     </h1>
@@ -372,7 +375,7 @@
             </div>
 
             <div class="ProjectCard">
-                <img src="QueryHandle.png" alt="QueryHandle">
+                <img src="Images/QueryHandle.png" alt="QueryHandle">
                 <div class="Hover-Content">
                     <h1 class="text-2xl mb-3  tracking-wider text-white text-center">Online Query Handler
                     </h1>
@@ -385,9 +388,9 @@
             </div>
 
         </div>
-        <div class="ColumnP">
+        <div class="ColumnP ColumnP2gsap">
             <div class="ProjectCard">
-                <img src="ResumeBuilder.png" alt="ResumeBuilder">
+                <img src="Images/ResumeBuilder.png" alt="ResumeBuilder">
                 <div class="Hover-Content">
                     <h1 class="text-2xl mb-3  tracking-wider text-white text-center">Resume Builder
                     </h1>
@@ -431,7 +434,7 @@
     <!-- -------------------Contact Me----------------------- -->
 
     <div id="Contact" class="Contact-me">
-        <h1 id="ProjectHead" class="text-3xl uppercase tracking-wider text-center">Contact ME</h1>
+        <h1 id="ContactHead" class="text-3xl uppercase tracking-wider text-center">Contact ME</h1>
         <form action="">
             <div class="FullName">
                 <input type="text" placeholder=" First Name" name="firstname">
@@ -457,7 +460,13 @@
             <a href="#"><i class="fa-solid fa-angles-up"></i></a>
         </div>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
